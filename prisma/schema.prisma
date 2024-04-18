@@ -17,12 +17,12 @@ model Event {
   slug             String  @unique
   maximumAttendees Int?    @map("maximum_attendees")
 
-  attendees Attendees[]
+  attendees Attendee[]
 
   @@map("events")
 }
 
-model Attendees {
+model Attendee {
   id        Int      @id @default(autoincrement())
   name      String
   email     String
