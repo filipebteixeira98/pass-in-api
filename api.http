@@ -6,3 +6,13 @@ Content-Type: application/json
   "details": "For everyone that is in love with programming",
   "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/events/59826a42-43fc-4a45-b4a3-009346bccabd/attendees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
